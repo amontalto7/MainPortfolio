@@ -20,6 +20,13 @@ body, header {
     background-size: 120px;
 }
 
+.aboutpic {
+    float: left;
+    display: inline;
+    width: 200px;
+    margin: 10px 20px 20px 0;
+}
+
 .lnav, nav {
     background-color: #336669!important;
 }
@@ -29,9 +36,43 @@ body, header {
     background-color: #174c4f!important;
 }
 
-.w3-hover-theme:hover {color:#fff !important; background-color:#004a43 !important}
-.w3-hover-text-theme:hover {color:#009688 !important}
-.w3-hover-border-theme:hover {border-color:#009688 !important}
+.portfolio-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    /* background-color: white; */
+}
+
+.portfolio-container:hover {
+    box-shadow: 0 0 3px #FF0000, 0 0 5px gold;
+}
+
+.portfolio-label {
+    position: absolute;
+    top: 50%;
+    /* left: 16px; */
+    width: 100%;
+    display: flex;
+    background-color: #336669;
+    /* z-index: 5; */
+    opacity: .90;
+    border-top: 1px solid #174c4f;
+    border-bottom: 1px solid #174c4f;
+}
+
+.portfolio-label > a {
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.portfolio-label:hover{
+    border-top: 1px solid #35174f;
+    border-bottom: 1px solid #35174f;
+    color: gold;
+    background-color: #174c4f;
+}
 
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
