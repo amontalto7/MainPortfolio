@@ -1,11 +1,37 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-body {
+body, header {
+    color: white;
     background-color: #174c4f;
 }
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
+.w3-sidebar {width: 120px;background: rgb(233, 151, 151);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
+
+.profile {
+    background: url("../images/profilepic.jpg") no-repeat;
+    background-size: 120px;
+    height: 126px;
+}
+
+.profile:hover {
+    background: url("../images/profilepic_h.jpg") no-repeat;
+    background-size: 120px;
+}
+
+.lnav, nav {
+    background-color: #336669!important;
+}
+
+.lnav:hover {
+    color: white!important;
+    background-color: #174c4f!important;
+}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#004a43 !important}
+.w3-hover-text-theme:hover {color:#009688 !important}
+.w3-hover-border-theme:hover {border-color:#009688 !important}
+
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
